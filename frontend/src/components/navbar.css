@@ -1,0 +1,27 @@
+.nav{
+    height: 70px;
+    width: 100%;
+    background-color: royalblue;
+     font-family: "Rubik", sans-serif;
+     font-size: 20px;
+     color: white;
+     text-align: center;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+}
+.link{
+    text-decoration: none;
+    padding-left: 20px;
+    color: whitesmoke;
+    text-align: center;
+}
+.nav_links{
+    padding-left: 20px;
+}
+.job_text{
+    
+     font-size: 27px;
+     color: white;
+}
