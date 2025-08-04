@@ -14,11 +14,19 @@ const postJob = async (req, res) => {
 const deleteJob = async (req, res) => {
   try {
     const { id } = req.params;
-    await Job.findByIdAndDelete(id);
-    res.status(204);
+    const deletedJob = await Job.findByIdAndDelete(id);
+
+    if (!deletedJob) {
+      return res.status(404).json({
+        success: false,
+        message: "Job not found",
+      });
+    }
+
+    res.status(204).end();
   } catch (err) {
-    res.status(404).json({
-      success: true,
+    res.status(500).json({
+      success: false,
       message: err.message,
     });
   }
