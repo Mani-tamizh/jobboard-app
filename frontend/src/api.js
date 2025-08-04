@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api/jobs",
+  baseURL: "https://jobboard-app-a8ck.onrender.com/api/jobs",
 });
 
 export const fetchJobs = () => API.get("/");
