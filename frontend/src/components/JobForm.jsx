@@ -22,7 +22,7 @@ export default function JobForm({ onSubmit }) {
 
     return (
         <Form onSubmit={handleSubmit}>
-            <div style={{ display: flex }}>
+            <div style={{ display: "flex" }}>
                 <Form.Group className="mb-3" controlId="formTitle">
                     <Form.Label>Job Title</Form.Label>
                     <Form.Control
